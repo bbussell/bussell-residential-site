@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f2ede7;
+  --foreground: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-6 lg:px-10;
+}
+
+.eyebrow {
+  @apply text-xs uppercase tracking-[0.35em] text-black/45;
+}
+
+.display-title {
+  @apply font-serif text-4xl leading-tight md:text-5xl lg:text-6xl;
+}
+
+.section-title {
+  @apply font-serif text-3xl leading-tight md:text-4xl;
+}
+
+.body-copy {
+  @apply text-base leading-8 text-black/70 md:text-lg;
+}
+
+.card {
+  @apply rounded-[2rem] border border-black/10 bg-white/80 shadow-soft backdrop-blur;
+}
