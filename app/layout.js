@@ -1,7 +1,17 @@
-import './globals.css';
+import "./globals.css";
+import { Playfair_Display, Inter } from "next/font/google";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 export const metadata = {
   metadataBase: new URL('https://bussellresidentialgroup.com'),
   title: {
@@ -15,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
