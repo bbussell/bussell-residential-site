@@ -16,7 +16,7 @@ export default function Hero() {
           Bussell Residential Group
         </p>
 
-        <h1 className="text-5xl md:text-7xl leading-tight font-light">
+        <h1 className="font-display text-5xl md:text-7xl leading-tight font-light">
           Chicago real estate, handled with more care.
         </h1>
 
