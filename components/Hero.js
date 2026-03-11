@@ -7,7 +7,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20"></div>
 
       <div className="relative max-w-3xl px-6">
         <p className="uppercase tracking-[0.3em] text-sm mb-6">
