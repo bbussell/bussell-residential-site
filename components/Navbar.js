@@ -1,26 +1,33 @@
 export default function Navbar() {
-  const links = [
-    { href: '/about', label: 'About' },
-    { href: '/buying', label: 'Buying' },
-    { href: '/selling', label: 'Selling' },
-    { href: '/neighborhoods', label: 'Neighborhoods' },
-    { href: '/contact', label: 'Contact' },
-  ];
-
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-sand/90 backdrop-blur">
-      <div className="section-shell flex items-center justify-between py-4">
-        <a href="/" className="block">
-          <p className="text-sm uppercase tracking-[0.3em]">Bussell Residential Group</p>
-          <p className="mt-1 text-xs text-black/55">Chicago real estate with a more thoughtful approach</p>
+    <header className="absolute top-0 left-0 z-50 w-full">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+        <a
+          href="/"
+          className="text-xs uppercase tracking-[0.32em] text-white/90"
+        >
+          Bussell Residential Group
         </a>
 
-        <nav className="hidden items-center gap-8 text-sm md:flex">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} className="transition hover:opacity-60">
-              {link.label}
-            </a>
-          ))}
+        <nav className="hidden md:flex items-center gap-8 text-sm text-white/85">
+          <a href="/about" className="transition hover:text-white">
+            About
+          </a>
+          <a href="/buying" className="transition hover:text-white">
+            Buying
+          </a>
+          <a href="/selling" className="transition hover:text-white">
+            Selling
+          </a>
+          <a href="/neighborhoods" className="transition hover:text-white">
+            Neighborhoods
+          </a>
+          <a
+            href="/contact"
+            className="rounded-full border border-white/30 px-4 py-2 text-xs uppercase tracking-[0.2em] transition hover:border-white hover:bg-white hover:text-black"
+          >
+            Contact
+          </a>
         </nav>
       </div>
     </header>
