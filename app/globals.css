@@ -39,3 +39,16 @@ body {
 .card {
   @apply rounded-[2rem] border border-black/10 bg-white/80 shadow-soft backdrop-blur;
 }
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
