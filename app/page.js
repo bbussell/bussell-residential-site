@@ -51,20 +51,27 @@ export default function HomePage() {
   </div>
 </section>
 
-      <section className="section-shell py-20">
-        <div className="max-w-2xl">
-          <p className="eyebrow">Services</p>
-          <h2 className="mt-4 section-title">Support that goes well beyond the transaction.</h2>
+      <section id="services" className="bg-white py-24 md:py-32">
+  <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <div className="max-w-3xl">
+      <p className="uppercase tracking-[0.35em] text-[11px] text-black/45">
+        Services
+      </p>
+      <h2 className="font-display mt-6 text-3xl md:text-5xl leading-tight">
+        Support that goes well beyond the transaction.
+      </h2>
+    </div>
+
+    <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] border border-black/10 bg-black/10 lg:grid-cols-3">
+      {services.map((item) => (
+        <div key={item.title} className="bg-white p-8 md:p-10">
+          <h3 className="font-display text-2xl md:text-3xl">{item.title}</h3>
+          <p className="mt-5 text-base leading-8 text-black/70">{item.text}</p>
         </div>
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {services.map((item) => (
-            <div key={item.title} className="card p-8">
-              <h3 className="font-serif text-2xl">{item.title}</h3>
-              <p className="mt-4 text-base leading-7 text-black/70">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="border-y border-black/10 bg-white/40">
         <div className="section-shell py-20">
