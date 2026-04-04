@@ -73,27 +73,37 @@ export default function HomePage() {
   </div>
 </section>
 
-      <section className="border-y border-black/10 bg-white/40">
-        <div className="section-shell py-20">
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-2xl">
-              <p className="eyebrow">Neighborhoods</p>
-              <h2 className="mt-4 section-title">Chicago, with a more local point of view.</h2>
-            </div>
-            <p className="max-w-xl text-base leading-7 text-black/70">
-              From West Loop to Lincoln Park, each neighborhood has its own rhythm. This section is
-              set up to expand later into SEO-friendly neighborhood guides.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {neighborhoods.map((neighborhood) => (
-              <div key={neighborhood} className="rounded-[1.5rem] border border-black/10 bg-sand px-6 py-8 text-lg shadow-soft">
-                {neighborhood}
-              </div>
-            ))}
-          </div>
+<section id="neighborhoods" className="bg-[#f7f3ee] py-24 md:py-32">
+  <div className="mx-auto max-w-7xl px-6 lg:px-10">
+    <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <div className="max-w-3xl">
+        <p className="uppercase tracking-[0.35em] text-[11px] text-black/45">
+          Neighborhoods
+        </p>
+        <h2 className="font-display mt-6 text-3xl md:text-5xl leading-tight">
+          Chicago, with a more local point of view.
+        </h2>
+      </div>
+
+      <p className="max-w-xl text-base leading-8 text-black/65">
+        From West Loop to Lincoln Park, each neighborhood has its own rhythm.
+        This section will expand into dedicated pages later for stronger search
+        visibility and deeper local guidance.
+      </p>
+    </div>
+
+    <div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {neighborhoods.map((neighborhood) => (
+        <div
+          key={neighborhood}
+          className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+        >
+          <p className="font-display text-2xl">{neighborhood}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="section-shell py-20">
         <div className="max-w-2xl">
