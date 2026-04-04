@@ -28,28 +28,28 @@ export default function HomePage() {
     <main>
       <Hero />
 
-      <section className="border-y border-black/10 bg-white/40">
-        <div className="section-shell grid gap-10 py-20 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow">About Brittany</p>
-            <h2 className="mt-4 section-title">A hospitality mindset, applied to real estate.</h2>
-          </div>
-          <div className="space-y-5 body-copy">
-            <p>
-              Brittany Bussell built Bussell Residential Group around proactive service, elevated
-              presentation, and the belief that clients deserve far more than basic representation.
-            </p>
-            <p>
-              From staging strategy and contractor coordination to building analysis, timing, and
-              negotiation terms, every detail is approached with care and intention.
-            </p>
-            <p>
-              The result is a process that feels more thoughtful, more organized, and far less
-              stressful than clients expect.
-            </p>
-          </div>
-        </div>
-      </section>
+     <section className="border-y border-black/10 bg-white/40">
+  <div className="section-shell grid gap-10 py-20 lg:grid-cols-2">
+    <div>
+      <p className="eyebrow">About Brittany</p>
+      <h2 className="mt-4 section-title">A hospitality mindset, applied to real estate.</h2>
+    </div>
+    <div className="space-y-5 body-copy">
+      <p>
+        Brittany Bussell built Bussell Residential Group around proactive service, elevated
+        presentation, and the belief that clients deserve far more than basic representation.
+      </p>
+      <p>
+        From staging strategy and contractor coordination to building analysis, timing, and
+        negotiation terms, every detail is approached with care and intention.
+      </p>
+      <p>
+        The result is a process that feels more thoughtful, more organized, and far less
+        stressful than clients expect.
+      </p>
+    </div>
+  </div>
+</section>
 
       <section className="section-shell py-20">
         <div className="max-w-2xl">
