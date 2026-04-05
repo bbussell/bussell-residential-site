@@ -125,14 +125,6 @@ export default function HomePage() {
     </div>
   )
 )}
-  ) : (
-    <div
-      key={neighborhood}
-      className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-    >
-      <p className="font-display text-2xl">{neighborhood}</p>
-    </div>
-  )
 )}
   )}
 </div>
