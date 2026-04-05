@@ -78,7 +78,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-<section id="neighborhoods" className="bg-[#f7f3ee] py-24 md:py-32">
+<section id="neighborhoods" className="relative z-20 bg-[#f7f3ee] py-24 md:py-32">
   <div className="mx-auto max-w-7xl px-6 lg:px-10">
     <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div className="max-w-3xl">
@@ -96,7 +96,7 @@ export default function HomePage() {
         visibility and deeper local guidance.
       </p>
     </div>
-<div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+<div className="relative z-20 mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
   const neighborhoodLinks = {
   "West Loop": "/app/west-loop-real-estate",
   "Bucktown": "/app/bucktown-real-estate",
