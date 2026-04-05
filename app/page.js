@@ -111,8 +111,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        id="neighborhoods"
+      <section id="neighborhoods"
         className="relative bg-[#f7f3ee] py-24 md:py-32"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -132,29 +131,31 @@ export default function HomePage() {
               stronger search visibility and deeper local guidance.
             </p>
           </div>
+<div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+  <Link href="/west-loop-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+    West Loop
+  </Link>
 
-          <div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {neighborhoods.map((neighborhood) => {
-              const link = neighborhoodLinks[neighborhood];
+  <Link href="/bucktown-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+    Bucktown
+  </Link>
 
-              return link ? (
-                <Link
-                  key={neighborhood}
-                  href={link}
-                  className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-                >
-                  <p className="font-display text-2xl">{neighborhood}</p>
-                </Link>
-              ) : (
-                <div
-                  key={neighborhood}
-                  className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-                >
-                  <p className="font-display text-2xl">{neighborhood}</p>
-                </div>
-              );
-            })}
-          </div>
+  <Link href="/wicker-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+    Wicker Park
+  </Link>
+
+  <Link href="/lincoln-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+    Lincoln Park
+  </Link>
+
+  <div className="rounded-[1.75rem] border border-black/10 bg-white p-8">
+    Gold Coast
+  </div>
+
+  <div className="rounded-[1.75rem] border border-black/10 bg-white p-8">
+    Lakeview
+  </div>
+</div>
         </div>
       </section>
 
