@@ -132,27 +132,27 @@ export default function HomePage() {
             </p>
           </div>
 <div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-  <Link href="/west-loop-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  <Link href="/west-loop-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
     West Loop
   </Link>
 
-  <Link href="/bucktown-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  <Link href="/bucktown-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
     Bucktown
   </Link>
 
-  <Link href="/wicker-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  <Link href="/wicker-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
     Wicker Park
   </Link>
 
-  <Link href="/lincoln-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  <Link href="/lincoln-park-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
     Lincoln Park
   </Link>
 
-<Link href="/gold-coast-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+<Link href="/gold-coast-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
   Gold Coast
 </Link>
 
-  <Link href="/lakeview-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  <Link href="/lakeview-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8 md:p-10 transition hover:-translate-y-0.5">
   Lakeview
 </Link>
 </div>
