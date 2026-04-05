@@ -97,7 +97,7 @@ export default function HomePage() {
         neighborhood === "West Loop" ? (
           <a
             key={neighborhood}
-            href="/app/west-loop-real-estate"
+            href="/west-loop-real-estate"
             className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
           >
             <p className="font-display text-2xl">{neighborhood}</p>
@@ -105,7 +105,7 @@ export default function HomePage() {
         ) : neighborhood === "Bucktown" ? (
           <a
             key={neighborhood}
-            href="/app/bucktown-real-estate"
+            href="/bucktown-real-estate"
             className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
           >
             <p className="font-display text-2xl">{neighborhood}</p>
@@ -113,7 +113,7 @@ export default function HomePage() {
         ) : neighborhood === "Wicker Park" ? (
           <a
             key={neighborhood}
-            href="/app/wicker-park-real-estate"
+            href="/wicker-park-real-estate"
             className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
           >
             <p className="font-display text-2xl">{neighborhood}</p>
