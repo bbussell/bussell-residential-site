@@ -152,9 +152,9 @@ export default function HomePage() {
   Gold Coast
 </Link>
 
-  <div className="rounded-[1.75rem] border border-black/10 bg-white p-8">
-    Lakeview
-  </div>
+  <Link href="/lakeview-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  Lakeview
+</Link>
 </div>
         </div>
       </section>
