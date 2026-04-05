@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 z-50 w-full">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <a
           href="/"
           className="text-xs uppercase tracking-[0.32em] text-white/90"
@@ -9,7 +9,7 @@ export default function Navbar() {
           Bussell Residential Group
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm text-white/85">
+        <nav className="hidden md:flex items-center gap-7 text-sm text-white/85">
           <a href="/about" className="transition hover:text-white">
             About
           </a>
