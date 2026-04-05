@@ -17,7 +17,12 @@ const services = [
 ];
 
 const neighborhoods = ['West Loop', 'Bucktown', 'Wicker Park', 'Lincoln Park', 'Gold Coast', 'Lakeview'];
-
+const neighborhoodLinks = {
+  "West Loop": "/app/west-loop-real-estate",
+  "Bucktown": "/app/bucktown-real-estate",
+  "Wicker Park": "/app/wicker-park-real-estate",
+  "Lincoln Park": "/app/lincoln-park-real-estate",
+};
 const testimonials = [
   'Brittany anticipated every step before it happened. The process felt seamless, strategic, and incredibly well managed.',
   'Her attention to detail, design eye, and negotiation skill made all the difference.',
