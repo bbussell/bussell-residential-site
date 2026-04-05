@@ -4,10 +4,10 @@ export default function Hero() {
       <img
         src="/chicago-hero.jpg"
         alt="Chicago skyline"
-        className="absolute inset-0 w-full h-full object-cover scale-105 animate-slow-zoom"
+       className="absolute inset-0 w-full h-full object-cover scale-105 animate-slow-zoom pointer-events-none"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/20 pointer-events-none"></div>
 
       <div className="relative max-w-5xl px-6 pt-24 md:pt-28">
         <p className="uppercase tracking-[0.35em] text-[11px] md:text-xs mb-8 text-white/80">
