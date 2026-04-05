@@ -18,7 +18,7 @@ export default function Hero() {
           Chicago real estate, handled with more care.
         </h1>
 
-        <p className="mx-auto mt-8 max-w-3xl text-lg md:text-xl leading-8 md:leading-9 text-white/85">
+      <p className="mx-auto mt-8 max-w-3xl text-lg md:text-xl leading-8 md:leading-9 text-white/85">
           Strategic guidance, elevated presentation, and a process designed to
           make buying or selling feel clear, calm, and exceptionally well
           managed.
