@@ -7,10 +7,10 @@ export default function NeighborhoodPage() {
             Chicago Neighborhood Guide
           </p>
           <h1 className="font-display mt-6 text-4xl leading-tight md:text-6xl">
-            West Loop real estate
+            West Loop Real Estate
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-8 text-black/70">
-            West Loop real estate
+            West Loop Real Estate
           </p>
         </div>
       </section>
