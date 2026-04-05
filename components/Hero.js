@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] w-full flex items-center justify-center text-center text-white">
+    <section className="relative h-[90vh] w-full overflow-hidden flex items-center justify-center text-center text-white">
       <img
         src="/chicago-hero.jpg"
         alt="Chicago skyline"
