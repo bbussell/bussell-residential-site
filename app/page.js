@@ -96,7 +96,7 @@ export default function HomePage() {
     neighborhood === "West Loop" ? (
       <a
         key={neighborhood}
-        href="/west-loop-real-estate"
+        href="/app/west-loop-real-estate"
         className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
       >
         <p className="font-display text-2xl">{neighborhood}</p>
