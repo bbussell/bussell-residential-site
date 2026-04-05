@@ -91,7 +91,7 @@ export default function HomePage() {
         visibility and deeper local guidance.
       </p>
     </div>
-
+<div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
     {neighborhoods.map((neighborhood) =>
   neighborhood === "West Loop" ? (
     <Link
