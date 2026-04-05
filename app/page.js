@@ -91,8 +91,7 @@ export default function HomePage() {
         visibility and deeper local guidance.
       </p>
     </div>
-<div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
- {neighborhoods.map((neighborhood) =>
+{neighborhoods.map((neighborhood) =>
   neighborhood === "West Loop" ? (
     <a
       key={neighborhood}
@@ -109,6 +108,23 @@ export default function HomePage() {
     >
       <p className="font-display text-2xl">{neighborhood}</p>
     </a>
+  ) : neighborhood === "Wicker Park" ? (
+    <a
+      key={neighborhood}
+      href="/app/wicker-park-real-estate"
+      className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </a>
+  ) : (
+    <div
+      key={neighborhood}
+      className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </div>
+  )
+)}
   ) : (
     <div
       key={neighborhood}
