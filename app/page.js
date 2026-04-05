@@ -148,9 +148,9 @@ export default function HomePage() {
     Lincoln Park
   </Link>
 
-  <div className="rounded-[1.75rem] border border-black/10 bg-white p-8">
-    Gold Coast
-  </div>
+<Link href="/gold-coast-real-estate" className="block rounded-[1.75rem] border border-black/10 bg-white p-8">
+  Gold Coast
+</Link>
 
   <div className="rounded-[1.75rem] border border-black/10 bg-white p-8">
     Lakeview
