@@ -92,43 +92,48 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {neighborhoods.map((neighborhood) =>
-        neighborhood === "West Loop" ? (
-          <a
-            key={neighborhood}
-            href="/west-loop-real-estate"
-            className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-          >
-            <p className="font-display text-2xl">{neighborhood}</p>
-          </a>
-        ) : neighborhood === "Bucktown" ? (
-          <a
-            key={neighborhood}
-            href="/bucktown-real-estate"
-            className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-          >
-            <p className="font-display text-2xl">{neighborhood}</p>
-          </a>
-        ) : neighborhood === "Wicker Park" ? (
-          <a
-            key={neighborhood}
-            href="/wicker-park-real-estate"
-            className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-          >
-            <p className="font-display text-2xl">{neighborhood}</p>
-          </a>
-        ) : (
-          <div
-            key={neighborhood}
-            className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
-          >
-            <p className="font-display text-2xl">{neighborhood}</p>
-          </div>
-        )
-      )}
+    {neighborhoods.map((neighborhood) =>
+  neighborhood === "West Loop" ? (
+    <Link
+      key={neighborhood}
+      href="/app/west-loop-real-estate"
+      className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </Link>
+  ) : neighborhood === "Bucktown" ? (
+    <Link
+      key={neighborhood}
+      href="/app/bucktown-real-estate"
+      className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </Link>
+  ) : neighborhood === "Wicker Park" ? (
+    <Link
+      key={neighborhood}
+      href="/app/wicker-park-real-estate"
+      className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </Link>
+  ) : neighborhood === "Lincoln Park" ? (
+    <Link
+      key={neighborhood}
+      href="/app/lincoln-park-real-estate"
+      className="block rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
+    </Link>
+  ) : (
+    <div
+      key={neighborhood}
+      className="rounded-[1.75rem] border border-black/10 bg-white p-8 transition hover:-translate-y-0.5"
+    >
+      <p className="font-display text-2xl">{neighborhood}</p>
     </div>
-  </div>
+  )
+)}
 </section>
       <section className="section-shell py-20">
         <div className="max-w-2xl">
